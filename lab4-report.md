@@ -1,6 +1,7 @@
 # pr_4
 Реалізація нової сутності, створення CRUD-операцій та відповідного RESTful API
 
+Реалізовано нову сутність Post, створено зв’язок ManyToOne з User, додано поле user у Post. У User додано поле posts як OneToMany зв’язок. Створено відповідну міграцію для створення таблиці post. Перевірено структуру таблиці через інструмент у WebStorm (віджет БД).
 Завдання реалізовано повністю, REST API працює коректно, перевірено через Postman.
 
 ## 1. Створимо сутність Post в src/orm/entities
@@ -186,6 +187,8 @@ app.use('/posts', postRoutes);
   "protocolProfileBehavior": {}
 }
 ```
+
+## 5. Протестуємо REST API через Postman
 
 ![image](https://github.com/user-attachments/assets/b9c7e2ab-d567-4061-a67f-195daafdeb65)
 
